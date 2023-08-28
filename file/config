@@ -1,0 +1,14 @@
+# tawhidimdad account
+Host github.com
+    HostName github.com
+    user git
+    IdentityFile ~/.ssh/id_rsa
+
+
+
+
+#jafore account
+Host github
+    HostName github.com
+    user git
+    IdentityFile ~/.ssh/id_rsa_jafore

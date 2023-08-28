@@ -1,0 +1,45 @@
+step 1
+generate key in .ssh file 
+$ ssh-kyegen -t rsa -C "tawhidimdad@gmail.com"
+$ ssh-kyegen -t rsa -C "tawhidimdad@gmail.com"
+
+
+step2
+set .pub file to  github ssh 
+
+
+step3 
+
+$ eval `ssh-agent -s`
+$ ssh-add .\id_rsa
+$ ssh-add .\id_rsa_other
+
+
+step4 
+
+create config file then add it 
+
+# tawhidimdad account
+Host github.com  # own name 
+    HostName github.com
+    user git
+    IdentityFile ~/.ssh/id_rsa
+
+
+
+
+#jafore account
+Host github #own name
+    HostName github.com
+    user git
+    IdentityFile ~/.ssh/id_rsa_jafore
+
+# git@github.com:jafore/account2.git here we have to change the host to 
+# git@github:jafore/account2.git when we add remote.
+
+
+https://www.youtube.com/watch?v=ap56ivm0dhw
+
+
+
+
